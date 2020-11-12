@@ -18,3 +18,65 @@ body {
 .loader {
   animation: loader 3s infinite ease;
 }
+
+.modular{  
+z-index:3;
+width: 125px;
+height: 30px;
+position: absolute;
+top:2973px;
+left:140px;
+border-radius: 20px;
+}
+
+.modular:hover {
+	background-color: #EDEDED;
+	opacity: 0.25;
+}
+
+
+.colapsar {
+	z-index:3;
+width: 130px;
+height: 30px;
+position: absolute;
+top:7093px;
+left:140px;
+border-radius: 20px;
+}
+
+.colapsar:hover {
+	background-color: #EDEDED;
+	opacity: 0.25;
+}
+
+
+.destruir {
+	z-index:3;
+width: 125px;
+height: 30px;
+position: absolute;
+top:10305px;
+left:140px;
+border-radius: 20px;
+}
+
+.destruir:hover {
+	background-color: #EDEDED;
+	opacity: 0.25;
+}
+
+.crear {
+	z-index:3;
+width: 100px;
+height: 30px;
+position: absolute;
+top:17213px;
+left:140px;
+border-radius: 20px;
+}
+
+.crear:hover {
+	background-color: #141414;
+opacity: 0.25;
+}
