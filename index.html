@@ -10,33 +10,24 @@
 </head>
 <body>
 
-<!-- PENSARON QUE ERA EL CÓDIGO DE LA PÁGINA PERO NO, ERA YO, UN JPG GIGANTE. 
-GRACIAS POR VER NUESTRA PÁGINA-->
+	<!-- PENSARON QUE ERA EL CÓDIGO DE LA PÁGINA PERO NO, ERA YO, UN JPG GIGANTE. GRACIAS POR VER NUESTRA PÁGINA -->
 
-<a href="https://www.youtube.com/watch?v=AgcYdN4c3Co&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=2" target="_blank">
-<div class="modular">	
-</div>
-</a>
-
-<a href="https://www.youtube.com/watch?v=qu24cbUpLAA&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=1" target="_blank">
-<div class="colapsar">	
-</div>
-</a>
-
-<a href="https://www.youtube.com/watch?v=tq-06YbwO08&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=3" target="_blank">
-<div class="destruir">	
-</div>
-</a>
-
-<a href="https://www.youtube.com/watch?v=qHL29Y2abBk&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=4" target="_blank">
-<div class="crear">	
-</div>
-</a>
+	<div class="button" id="modular">
+		<a href="https://www.youtube.com/watch?v=AgcYdN4c3Co&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=2" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
 
 
+	<div class="button" id="colapsar">
+		<a href="https://www.youtube.com/watch?v=qu24cbUpLAA&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=1" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
 
+	<div class="button" id="destruir">
+		<a href="https://www.youtube.com/watch?v=tq-06YbwO08&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=3" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
 
-
+	<div class="button" id="crear">
+		<a href="https://www.youtube.com/watch?v=qHL29Y2abBk&list=PLqm3NQBGUxBg3Kbt2MD8sD0vYdIbhZOxT&index=4" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	</div>
 
 	<img src="ARCAWEB.jpg" width="100%" height="auto">
 
@@ -45,11 +36,27 @@ GRACIAS POR VER NUESTRA PÁGINA-->
 	</div>
 
 <script>
-        $(window).on("load",function(){
+        $(window).on("load", function() {
           $(".loader-wrapper").fadeOut("slow");
           $(document.body).css('overflow', 'auto');
+
+          let h = document.body.scrollHeight;
+          let w = document.body.scrollWidth;
+
+          $(".button").each(function(i) {
+          		$(this).css('left', w * 6.70 / 100)
+          });
+
+          $("#modular").css("top", h * 13.89 / 100)
+          $("#colapsar").css("top", h * 33.19 / 100)
+          $("#destruir").css("top", h * 48.23/ 100)
+          $("#crear").css("top", h * 80.54 / 100)
+
+          console.log(h);
         });
-    </script>
+</script>
+
+<!-- 11000010 10111111 01010001 01010101 11000011 10001001 00100000 01010000 01000001 01010011 01000001 00100000 01001100 01000001 01010010 01010110 01000001 00111111 -->
 
 </body>
 </html>
